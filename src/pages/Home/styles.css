@@ -1,0 +1,47 @@
+.home-card {
+  display: flex;
+  justify-content: space-around;
+}
+
+.home-content-container {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .home-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 397px;
+    height: 460px;
+    margin-left: 70px;
+    margin-top: 149px;
+  }
+
+  .home-content-container h1 {
+    color: #ffffff;
+    font-weight: 700px;
+    font-size: 52px;
+    line-height: 65.37px;
+    letter-spacing: -1.5%;
+    margin-left: 27px;
+  }
+
+  .home-content-container p {
+    width: 320px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 27px;
+    margin-bottom: 30px;
+    color: #f2f2f2;
+    font-weight: 400px;
+    font-size: 22px;
+    line-height: 29.96px;
+    letter-spacing: -1.5%;
+  }
+}
+
+@media(min-width: 1200px){
+  .home-content-container {
+    display: flex;
+  }
+}

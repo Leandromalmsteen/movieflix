@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.base-input{
+  border-radius: 4px;
+  font-size: 1em;
+  letter-spacing: -0.015em;
+  color: #000000;
+  height: 50px;
+  background-color: #FEFEFE;
+}
+
+.base-input::placeholder {
+  color: #9E9E9E;
+}

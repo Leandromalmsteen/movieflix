@@ -1,0 +1,13 @@
+.navbar {
+    width: auto;
+    min-height: 68px;
+}
+
+
+h1 {
+    size: 24px;
+    color: #000000;
+    margin-left: 5%;
+    line-height: 32.68px;
+    letter-spacing: -1.5%;
+}
