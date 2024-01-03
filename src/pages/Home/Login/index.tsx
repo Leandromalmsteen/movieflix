@@ -1,5 +1,6 @@
 import { useForm } from 'react-hook-form';
 import { requestBackendLogin } from '../../../util/request';
+import { useNavigate } from 'react-router-dom';
 import './styles.css';
 
 type FormData = {
@@ -11,9 +12,12 @@ const Login = () => {
 
   const { register, handleSubmit } = useForm<FormData>();
 
+  const navigate = useNavigate();
+
   const onSubmit = (formData: FormData) => {
     requestBackendLogin(formData).then(response => {
-      console.log('Sucesso', response)
+      console.log('Sucesso', response);
+      navigate('/movies');
     }).catch(error => {
       console.log('Erro', error);
     });

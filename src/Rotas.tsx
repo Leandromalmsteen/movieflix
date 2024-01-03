@@ -1,14 +1,17 @@
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import Movies from './pages/Movies';
+
 
 const Rotas = () => (
-  <Router>
+  <BrowserRouter>
     <Navbar />
     <Routes>
-      <Route path="/" element={<Home />}></Route>
+      <Route path="/" element={<Home />} />
+      <Route path="/movies" element={<Movies /> } />
     </Routes>
-  </Router>
+  </BrowserRouter>
 );
 
 export default Rotas;
