@@ -9,7 +9,7 @@ type LoginResponse = {
   userId: number;
 };
 
-////////////////////////////////////////////////////////////////////////////////////////
+
 export const saveAuthData = (obj: LoginResponse) => {
   localStorage.setItem(TOKEN_KEY, JSON.stringify(obj));
 };
@@ -22,4 +22,4 @@ export const getAuthData = () => {
 export const removeAuthData = () => {
   localStorage.removeItem(TOKEN_KEY);
 };
-////////////////////////////////////////////////////////////////////////////////////////
+
