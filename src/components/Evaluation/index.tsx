@@ -6,6 +6,7 @@ import './styles.css';
 
 type Props = {
   movieId: string;
+  onNewSubmit: Function;
 };
 
 type FormData = {
@@ -13,7 +14,7 @@ type FormData = {
   text: string;
 };
 
-const Evaluation = ({ movieId }: Props) => {
+const Evaluation = ({ movieId, onNewSubmit }: Props) => {
   const { register, handleSubmit } = useForm<FormData>();
 
   const [hasError, setHasError] = useState(false);
@@ -24,7 +25,7 @@ const Evaluation = ({ movieId }: Props) => {
     requestPostEvaluation(formData)
       .then((response) => {
         setHasError(false);
-        window.location.reload();
+        onNewSubmit();
       })
       .catch((error) => {
         setHasError(true);
@@ -32,7 +33,7 @@ const Evaluation = ({ movieId }: Props) => {
   };
 
   return (
-    <div className="base-card evaluation-card">
+    <div className="container base-card evaluation-card">
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-4">
           <input

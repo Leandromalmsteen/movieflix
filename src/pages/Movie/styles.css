@@ -1,38 +1,16 @@
 .movie-container {
-  margin-top: 15px;
-  margin-left: 30px;
+  margin-top: 20px;
   color: #ffffff;
+  padding: 0 10px 10px 10px;
 }
 
-.movie-container h1 {
-  font-size: 24px;
+.select-container{
+background: #6C6C6C;
+box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+border-radius: 4px;
+margin-bottom: 20px;
 }
 
-.movie-list {
-  margin-top: 40px;
-}
-
-.movie-list ul {
-  font-size: 18px;
-  list-style-type: none;
-  padding-left: 0px;
-  font-style: normal;
-}
-
-.movie-list li {
-  padding-bottom: 12px;
-}
-
-@media (min-width: 992px) {
-  .movie-container h1 {
-    font-size: 48px;
-  }
-
-  .movie-list ul {
-    font-size: 24px;
-  }
-
-  .movie-list li {
-    padding-bottom: 27px;
-  }
+.select-content{
+  width: 300px;
 }
