@@ -4,7 +4,8 @@
   justify-content: center;
   align-items: center;
   height: 157px;
-  margin: 20px 10px 0px 10px;
+  margin: 20px 10px 0px 0px;
+  border-radius: 0%;
 }
 
 .evaluation-input {
@@ -18,14 +19,25 @@
 
 @media (min-width: 576px) {
   .evaluation-input {
+    width: 496px;
     margin: 20px;
   }
 }
 
 @media (min-width: 768px) {
   .evaluation-input {
-    width: 700px;
+    width: 660px;
   }
+
+ 
+}
+
+@media (min-width: 992px) {
+  .evaluation-input {
+    width: 832px;
+  }
+
+ 
 }
 
 @media (min-width: 1200px) {
