@@ -42,11 +42,19 @@
 
 @media (min-width: 768px) {
   .comment-details-card {
-    width: 700px;
+    width: 608px;
+    height: 48px;
   }
 
   .comment-details-card p {
     width: 650px;
+  }
+}
+
+@media (min-width: 992px) {
+  .comment-details-card {
+    width: 832px;
+    height: 85px;
   }
 }
 

@@ -48,14 +48,14 @@
   .product-filter-select__control {
     font-size: 1em;
     letter-spacing: -0.015em;
-    background-color: #263238 !important;
+    background-color: #525252 !important;
     border: none !important;
     border-bottom: 1px solid #E1E1E1 !important;
   }
   
   
   .product-filter-select__placeholder {
-    color: #e9902b !important;
+    color: #FFFFFF !important;
   }
 
   .product-filter-select__menu{
@@ -70,7 +70,7 @@
 
 
   .product-filter-select__single-value{
-    color: #9E9E9E !important;
+    color: #FFFFFF !important;
   }
   
   
@@ -79,6 +79,9 @@
   }
   
   @media (min-width: 576px) {
+    .product-filter-container {
+      width: 260px;
+    }
     .btn-product-filter-word {
       display: unset;
     }

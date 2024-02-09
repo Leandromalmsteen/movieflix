@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { requestPostEvaluation } from 'utils/requests';
 import './styles.css';
+import { toast } from 'react-toastify';
 
 type Props = {
   movieId: string;
@@ -25,10 +26,12 @@ const Evaluation = ({ movieId, onNewSubmit }: Props) => {
     requestPostEvaluation(formData)
       .then((response) => {
         setHasError(false);
+        toast.info('Avaliação enviada com sucesso!');
         onNewSubmit();
       })
       .catch((error) => {
         setHasError(true);
+        toast.error('Erro ao enviar avaliação!')
       });
   };
 
