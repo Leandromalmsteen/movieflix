@@ -15,4 +15,11 @@ margin-bottom: 20px;
   width: 300px;
 }
 
+@media (min-width: 992px) { 
+    .select-container{
+      width:885px;
+     margin-left: 30px;
+    }
+}
+
 

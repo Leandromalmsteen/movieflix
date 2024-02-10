@@ -77,8 +77,8 @@ color: #FFFFFF;
 /* Dispositivos large (desktops com 992px ou mais)*/
 @media (min-width: 992px) { 
     .card-container{
-        width: 230px;
-        height: 350px;
+        width: 436px;
+        height: 457px;
         margin-bottom: 40px;
     }
 }

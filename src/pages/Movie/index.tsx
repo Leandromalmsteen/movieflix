@@ -63,7 +63,7 @@ const Movie = () => {
       </div>
       <div className="row">
         {page?.content.map((item) => (
-          <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3" key={item.id}>
+          <div className="col-sm-6 col-md-6 col-lg-6 col-xl-3" key={item.id}>
             <Link to={`/movies/${item.id}`}>
               <MovieCard
                 imgUrl={item.imgUrl}
